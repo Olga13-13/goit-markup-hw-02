@@ -14,11 +14,18 @@ body {
     background: #FFFFFF;
 }
 
-.page-header {}
+.page-header {
+    color: #212121;
+}
 
 .link {
     text-decoration: none;
 }
+
+.header-navigation a:hover{
+    color: #2196F3;
+}
+
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
@@ -234,7 +241,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    
+    font-style: normal;
     
 }
 
