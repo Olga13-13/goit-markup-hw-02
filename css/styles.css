@@ -2,9 +2,9 @@
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
     --primary-text-color-theme-dark: #212121;
-    --secondary-text-color-theme-dark: #ffffff;
+    --secondary-text-color-theme-light: #ffffff;
     --primary-text-color-theme-light: #303030;
-    --secondary-text-color-theme-light: #555555;
+    --secondary-text-color-theme-lighttttt: #555555;
     --accent-color: #2196F3;
 }
 
@@ -27,7 +27,7 @@ button {
 
 body {
     font-family: var(--primary-font);
-    background: #FFFFFF;
+    background: var(--secondary-text-color-theme-light);
     color: var(--primary-text-color-theme-dark);
 }
 
@@ -43,11 +43,9 @@ body {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
 
-.logo-header-part2 {
+.logo-header-part1 {
     color: var(--accent-color);
 }
-
-
 
 .menu-link {
     font-weight: 500;
@@ -62,19 +60,10 @@ body {
     color: var(--accent-color);
 }
 
-.menu-contact {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-}
-
-
-
-
-
 .contact-mail:hover,
-.contact-mail:focus, 
+.contact-mail:focus, {
+    color: var(--accent-color);
+}
 .contact-phone-number:hover,
 .contact-phone-number:focus {
     color: var(--accent-color);
@@ -86,29 +75,200 @@ body {
 
 }
 
-
-
-
-
-
-
-
-
-
-.modal-open-btn {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-
-    /* color: #ffffff; */
-}
-
-.modal-open-btn:hover,
-.modal-open-btn:focus {
-    background-color: var(--accent-color);
-    color: #ffffff;
-}
-
 /* =========== /HEADER =========== */
+
+/* =========== MAIN =========== */
+
+.page-main {}
+
+/* =========== SHAPKA ===========*/
+.section-shapka {
+    background: #2F303A;
+}
+
+.section-shapka-h {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color-theme-light);
+}
+
+
+.section-modal-open-btn {
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+
+.section-modal-open-btn:hover,
+.section-modal-open-btn:focus {
+    background-color: #188CE8;
+}
+
+.btn-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color-theme-light);
+}
+/* =========== /SHAPKA ===========*/
+
+
+
+/* =========== OSOBLIVOSTI ===========*/
+
+.section-osoblivosti {}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.section-osoblivosti-h {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(primary-text-color-theme-dark);
+}
+
+.section-osoblivosti-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/* =========== /OSOBLIVOSTI ===========*/
+
+/* =========== WORK ===========*/
+.work {
+
+}
+
+.work-h {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-dark);
+}
+/* =========== /WORK ===========*/
+
+/* =========== COMANDA ===========*/
+.comanda {
+    background: #F5F4FA;
+}
+
+.comanda-our {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.comanda-fon {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.comanda-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.comanda-profesion{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/* =========== /COMANDA ===========*/
+
+/* =========== /MAIN =========== */
+
+/* =========== FOOTER ===========*/
+.page-footer {
+    background: #2F303A;
+}
+
+.logo-footer {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-theme-light);
+}
+
+.logo-footer-part1 {
+    color: var(--accent-color);
+}
+
+.footer-contact {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    font-style: normal
+}
+
+.contact-menu {
+
+}
+
+.contact-menu-map {
+    color: #FFFFFF;
+}
+
+.contact-menu-mail{
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.contact-menu-tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-menu-map:hover,
+.contact-menu-map:focus {
+    color: var(--accent-color);
+}
+
+
+.contact-menu-mail:hover,
+.contact-menu-mail:focus {
+    color: var(--accent-color);
+}
+
+.contact-menu-tel:hover,
+.contact-menu-tel:focus {
+    color: var(--accent-color);
+}
