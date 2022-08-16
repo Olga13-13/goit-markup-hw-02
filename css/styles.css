@@ -6,7 +6,14 @@
     --primary-text-color-theme-gray: #757575;
     --secondary-text-color-theme-dark: #2F303A;
     --accent-color: #2196F3;
+    --secondary-color: #F5F4FA;
+    --secondary-color-light: #FFFFFF;
+    --secondary-color-with: #EEEEEE;
+    --secondary-color-dark: #000000;
+    --color-bgc: #188CE8;
 }
+
+
 
 .link {
     text-decoration: none;
@@ -19,6 +26,7 @@
 .current {
     color: var(--accent-color);
 }
+
 
 img {
     display: block;
@@ -33,6 +41,8 @@ body {
     font-family: var(--primary-font);
     background: var(--secondary-text-color-theme-light);
     color: var(--primary-text-color-theme-dark);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 /* =========== HEADER =========== */
@@ -42,9 +52,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    color: var(--secondary-color-dark);
 }
 
 .logo-header-part1 {
@@ -110,7 +118,7 @@ body {
 
 .section-modal-open-btn:hover,
 .section-modal-open-btn:focus {
-    background-color: #188CE8;
+    background-color: var(--color-bgc);
 }
 
 .btn-text {
@@ -130,15 +138,9 @@ body {
 /* =========== PORTFOLIO-FILTERS ===========*/
 .section-portfolio{}
 
-.portfolio-filters {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color-theme-dark);
-    
-}
+.portfolio-filters {}
+
+
 
 .filters {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -146,6 +148,11 @@ body {
                 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    align-items: center;
+    color: var(--primary-text-color-theme-dark);
 }
 
 .filters:active,
@@ -166,20 +173,13 @@ body {
 }
 
 .portfolio-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;       
-    letter-spacing: 0.03em;
     color: var(--primary-text-color-theme-gray);
 }
 .portfolio-box {
-    box-sizing: border-box;
-    width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 262px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--secondary-color-light);
+    border: 1px solid var(--secondary-color-with);
 }
 
 
@@ -202,18 +202,13 @@ body {
 
 .section-osoblivosti-h {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(primary-text-color-theme-dark);
 }
 
 .section-osoblivosti-p {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color-theme-gray);
 }
 /* =========== /OSOBLIVOSTI ===========*/
@@ -228,14 +223,13 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color-theme-dark);
 }
 /* =========== /WORK ===========*/
 
 /* =========== COMANDA ===========*/
 .comanda {
-    background: #F5F4FA;
+    background: var(--secondary-color);
 }
 
 .comanda-our {
@@ -243,7 +237,6 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .comanda-fon {
@@ -257,15 +250,12 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .comanda-profesion{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color-theme-gray);
 }
 /* =========== /COMANDA ===========*/
@@ -282,7 +272,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--secondary-text-color-theme-light);
 }
 
@@ -291,10 +280,7 @@ body {
 }
 
 .footer-contact {
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     font-style: normal
 }
 
@@ -306,7 +292,7 @@ body {
 
 .contact-menu-mail{
     color: rgba(255, 255, 255, 0.6);
-    border: 1px solid #000000;
+    border: 1px solid var(--secondary-color-dark);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
 }
